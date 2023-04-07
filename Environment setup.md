@@ -1,4 +1,7 @@
 ## Docker Engine
+
+**Do not install docker using the snap package!**
+
 Install docker engine: <https://docs.docker.com/engine/>
 
 Verify that the Docker Engine installation is successful by running the `hello-world` image:
@@ -74,3 +77,22 @@ Using: OpenFOAM-2212 (2212) - visit www.openfoam.com
 Build: _fd8c5e00-20221221
 Arch:  LSB;label=32;scalar=64
 ```
+
+### Package administration (sudo)
+User=sudofoam  passwd=foam
+```
+openfoam$ su - sudofoam
+sudofoam$ sudo apt-get update
+sudofoam$ sudo apt-get install
+```
+
+
+
+
+<https://github-wiki-see.page/m/norlab-ulaval/Norlab_wiki/wiki/Tutorial:-Installing-ParaView-on-Ubuntu>
+<https://discourse.paraview.org/t/modulenotfounderror-no-module-named-paraview/10301/9>
+
+### Headless:
+
+<https://kitware.github.io/paraview-docs/latest/cxx/Offscreen.html>
+<https://www.cfdengine.com/newsletter/033/>
