@@ -129,3 +129,11 @@ Processing triggers for linux-image-5.15.0-69-generic (5.15.0-69.76) ...
 You can try it out by running a cuda container with the `nvidia-smi` command to poll for the installed GPUs:
 
 `$ sudo docker run --gpus all --rm nvcr.io/nvidia/cuda:11.8.0-base-ubuntu22.04 nvidia-smi`
+
+
+### Create a container for later use using docker exec
+
+```
+$ sudo docker run --name cuda_11_8 -d -i -t --gpus all nvcr.io/nvidia/cuda:11.8.0-base-ubuntu22.04 /bin/sh
+$ sudo docker exec -it cuda_11_8 sh
+```
