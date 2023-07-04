@@ -137,3 +137,6 @@ You can try it out by running a cuda container with the `nvidia-smi` command to 
 $ sudo docker run --name cuda_11_8 -d -i -t --gpus all nvcr.io/nvidia/cuda:11.8.0-base-ubuntu22.04 /bin/sh
 $ sudo docker exec -it cuda_11_8 sh
 ```
+
+### gpumon script
+<https://www.docs.arc.vt.edu/usage/gpumon.html>
